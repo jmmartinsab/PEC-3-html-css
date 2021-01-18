@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    max-width: 100%;
+}
+
+.container {
+    background-color: #e8e8e8;
+}
+
+/******************************Header y menú******************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 16px 14vh 16px;
+}
+
+/*=====Logo=====*/
+
+.logo a {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.logo a h1 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 12px;
+}
+
+.red-italic {
+    color: #9b1700;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/*=====Menu=====*/
+
+#menu ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+}
+
+#menu ul li {
+    margin: 12px;
+}
+
+#menu ul li a {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+#menu ul li a.active {
+    font-style: italic;
+}
+
+#menu ul li a:hover {
+    color: rgba(28, 28, 28, 0.5)
+}
+
+/*=====Button=====*/
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9b1700;
+    max-height: 40px;
+}
+
+.btn a {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 8px 12px 8px 12px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #1c1c1c;
+}
+
+.submit {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 8px 12px 8px 12px;
+    border: none;
+    border-radius: 4px;
+    width: 160px;
+}
+
+/******************************footer******************************/
+
+footer {
+    background-color: #433A44;
+}
+
+.content-footer {
+    padding: 12vh 16px 32px 16px;
+}
+
+footer>div>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*=====footer menu=====*/
+
+.footer-menu-flow {
+    margin-bottom: 40px;
+}
+
+.footer-menu-flow nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.right li {
+    margin-right: 8px;
+}
+
+.left li {
+    margin-left: 8px;
+}
+
+.footer-menu-flow nav li:after {
+    content: "•";
+    margin: 0 8px;
+    color: #ffffff;
+}
+
+.footer-menu-flow nav li:last-child:after {
+    display: none;
+}
+
+.footer-menu-flow nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer-menu-flow nav ul li a:hover {
+    color: #9b1700;
+}
+
+/*=====credits and page-top=====*/
+
+.credits p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.credits p a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.to-top {
+    align-self: flex-end;
+}
+
+.page-top {
+    height: 40px;
+}
+
+/******************************Index******************************/
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+.cont-center {
+    max-width: 1080px;
+}
+
+.col-center {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.col-center h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.center-descrip {
+    max-width: 780px;
+    text-align: center;
+}
+
+/*=====Iconos=====*/
+
+.icon-row {
+    display: flex;
+}
+
+.icon-content {
+    width: 164px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 55px;
+}
+
+.icon-content img {
+    margin-bottom: 8px;
+}
+
+.icon-content figcaption {
+    text-align: center;
+}
+
+/*=====Formulario=====*/
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    width: 30vw;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: column;
+    border: none;
+}
+
+fieldset input {
+    height: 52px;
+    margin-bottom: 16px;
+}
+
+small {
+    font-size: 10px;
+    margin-bottom: 32px;
+}
+
+.bold {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.small-link {
+    font-size: 10px;
+    color: #9b1700;
+    text-decoration: none;
+}
+
+.check {
+    font-size: 10px;
+    margin-bottom: 24px;
+}
+
+.two-col h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 28vw;
+}
+
+/******************************Clubes temáticos******************************/
+
+.three-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.club-card {
+    display: flex;
+    flex-flow: column;
+    width: 22vw;
+    margin-right: 32px;
+    margin-bottom: 36px;
+}
+
+.club-card .figcaption {
+    font-size: 22px;
+    margin: 8px 0 12px 0;
+}
+
+.club-card .figcaption:before {
+    content: "....";
+    margin: 0 12px 0 0;
+    color: #1c1c1c;
+    font-size: 24px;
+}
+
+.club-card p {
+    margin-bottom: 12px;
+}
+
+.card-link {
+    color: #9b1700;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/******************************Sesiones 2020******************************/
+
+.align-lft {
+    text-align: left;
+}
+
+.top-dotted {
+    width: 71vw;
+    border-top: dotted 3px #9b1700;
+}
+
+.menu-lft ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+}
+
+.menu-lft ul li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.menu-lft ul li a:hover {
+    font-weight: bold;
+}
+
+.aside-menu {
+    padding-top: 12px;
+}
+
+.aside-menu h3 {
+    font-size: 22px;
+}
+
+.distribute {
+    display: flex;
+    justify-content: space-between;
+    width: 71vw;
+}
+
+/*=====cards de sesiones 2020=====*/
+
+.club-movies {
+    display: flex;
+}
+
+.sesion-img {
+    width: 246px;
+    height: 430px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 8px 1px rgba(28, 28, 28, 0.4);
+    margin: 0 10px;
+}
+
+.sesion-img a {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    text-decoration: none;
+    height: 430px;
+}
+
+.sesion-img a img:hover {
+    opacity: 0.5;
+}
+
+.sesion-cap {
+    color: #9b1700;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-left: 4px;
+}
+
+.club-section {
+    margin-bottom: 56px;
+}
+
+.club-sec-name {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    color: #1c1c1c;
+}
+
+.club-sec-name::before {
+    content: ".....";
+    margin: 0 18px 0 0;
+    color: #9b1700;
+    font-size: 18px;
+}
+
+.aside-content {
+    display: flex;
+    flex-flow: column;
+    padding-top: 48px;
+}
+
+/******************************Detalle sesión******************************/
+
+.ariadna {
+    margin-bottom: 40px;
+}
+
+.ariadna ul {
+    display: flex;
+    list-style: none;
+}
+
+.ariadna ul li:after {
+    content: "/";
+    margin: 0 8px;
+}
+
+.ariadna ul li:last-child:after {
+    display: none;
+}
+
+.ariadna ul li a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.sec-title {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 60px;
+}
+
+.two-sides {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 22px;
+    color: #1c1c1c;
+    margin-bottom: 16px;
+}
+
+.summary dl {
+    width: 28.646vw;
+}
+
+.summary dl dt {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+    margin-bottom: 8px;
+}
+
+.summary dl dd {
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+
+.summary dl dd p {
+    font-size: 16px;
+    color: #1c1c1c;
+}
+
+.data-sheet {
+    list-style: none;
+}
+
+.data-sheet li {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #1c1c1c;
+}
+
+.data-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1c1c1c;
+}
+
+.description {
+    width: 39.584vw;
+}
+
+.body-text {
+    color: #1c1c1c;
+    margin-bottom: 20px;
+}
+
+.end-prgrph {
+    margin-bottom: 40px;
+}
+
+.round {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    float: left;
+    shape-outside: circle(50%);
+    margin: 0 8px 8px 0;
+}
+
+.text-image {
+    margin-bottom: 40px;
+}
+
+.sub-video {
+    display: flex;
+    margin-top: 8px;
+}
+
+.text-video-left::first-letter {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.text-video::first-letter {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.text-video-left {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.text-video {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+.adjust {
+    margin-left: 0;
+}
+
+.video-container iframe {
+    border: none;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.trailer {
+    margin-bottom: 56px;
+}
+
+/*==============================================================================================================================================
+                                                                    SMARTPHONES
+==============================================================================================================================================*/
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    /*----------------------menu---------------------*/
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 16px 16px 14vh 16px;
+    }
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+    #menu ul li {
+        margin-bottom: 0px;
+    }
+    .order {
+        margin-bottom: 16px;
+    }
+    .order:first-child {
+        order: 2;
+    }
+    .order:nth-child(2) {
+        order: 3;
+    }
+    .order:nth-child(3) {
+        order: 1;
+    }
+    /*----------------------footer---------------------*/
+    .content-footer {
+        padding: 6vh 16px 32px 16px;
+    }
+    footer>div>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-menu-flow {
+        margin-bottom: 0px;
+    }
+    .footer-menu-flow nav {
+        margin-bottom: 48px;
+    }
+    .footer-menu-flow nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+    .footer-menu-flow nav li:after {
+        content: none;
+    }
+    .credits p {
+        font-family: 'Open Sans', sans-serif;
+        color: #ffffff;
+        font-size: 16px;
+        text-align: center;
+    }
+    .to-top {
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+    /*----------------------index---------------------*/
+    .cont-center {
+        width: 100vw;
+        margin: 0 16px;
+    }
+    .icon-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .two-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .two-col h4 {
+        width: auto;
+        margin-bottom: 16px;
+    }
+    form {
+        width: auto;
+    }
+    /*----------------------clubes tematicos---------------------*/
+    .col-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .three-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .club-card {
+        width: auto;
+        margin: 0 0 32px 0;
+    }
+    /*----------------------Sesiones 2020---------------------*/
+    #content {
+        margin: 0 16px;
+    }
+    .distribute {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .aside-menu {
+        align-self: flex-start;
+    }
+    .top-dotted {
+        border-top: none;
+        width: auto;
+    }
+    .cont-center {
+        margin: 0;
+    }
+    .aside-content {
+        width: auto;
+    }
+    .club-section {
+        width: auto;
+    }
+    .club-movies {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .sesion-img {
+        margin-bottom: 16px;
+    }
+    /*----------------------Detalle sesion---------------------*/
+    .ariadna {
+        display: flex;
+        justify-content: center;
+    }
+    .sec-title {
+        margin: 0 16px;
+    }
+    .two-sides {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: 0 16px 0 16px;
+        justify-content: center;
+    }
+    .summary dl {
+        width: auto;
+    }
+    .description {
+        width: auto;
+    }
+}
